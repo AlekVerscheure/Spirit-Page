@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id = "color-one"> </p>
+		<p id = "teamsaying">Your Team Saying:</p>
+		<button onClick = "turnColor()">Click This For Color</button>
+		<button onClick = "teamsaying()">Click here for team saying</button>
+	
+		<script>
+ var spirit = document.createElement("h2");
+		
+			function teamsaying() {
+		      newspirit = prompt ("What is your favorite team saying?");
+		   
+		    spirit.innerHTML=newspirit;
+		    document.body.appendChild(spirit);
+		   
+		}
+		  function turnColor() {
+		      var color1 = prompt ("What color do you want the text?");
+		    
+		     
+		     spirit.setAttribute("style", "color:" + color1);
+		       
+		  }
+		  
+	
+		
+		      
+		</script>
+	</body>
+</html>
